@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.css">
+    <script src="./Bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Xin Chào Admin!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <div class="top_header">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="left">
+                        <p>Địa chỉ: Chung cư xã hội XH - 01 Phước Long, phường Phước Long, thành phố Nha Trang, tỉnh Khánh Hòa</p>
+                        <p><i class="fa fa-phone"></i> Hotline: 0393 519 389</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="right">
+                        <ul type="none">
+                            <li><a href="#">Kho hàng Trung</a></li>
+                            <li><a href="#">Trang sự kiện</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Đánh giá</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="margin: 0;"/>
+        <div class="header">
+            <nav class="nav-bar logo_and_search_and_Sign">
+                <div class="logo">
+                    <img src="./img/Avatar.png">
+                    <h1>Bếp nhà Ốc</h1>
+                </div>
+                <div class="search" id="search">
+                    <input type="text" placeholder="Tìm kiếm ở đây" maxlength="100" value=""/>
+                    <button class="btn btn-warning" name="Search"><i class="fa-solid fa-xl fa-magnifying-glass"></i></button>
+                </div>
+                <div class="Sign_in">
+                    <a href="#">
+                        <p>Đăng nhập/Đăng ký <img src="./img/Account_AVT.png" alt="Person" width="96" height="96"></p>
+                    </a>
+                </div>
+            </nav>
+            <hr/>
+            <nav class="nav-bar head_menu"  id="myHeader">
+                <ul type="none">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#" >Sản phẩm <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+                    <li><a href="#">Showroom</a></li>
+                    <li><a href="#">Blog <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+                    <li><a href="#">Bán hàng trực tuyến</a></li>
+                    <li><a href="#">Liên hệ</a></li>                  
+                </ul>
+            </nav>
+        </div>
+        <div class="center">
+            <div class="head_slide">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <div class="container-fluid slide">
+                            <div class="slide_total">
+                                <img src="./img/SanPham/Slide_quang_cao/MayEp.png"/>
+                            </div>
+                            <div class="slide_total">
+                                <img src="./img/SanPham/Slide_quang_cao/NoiChien.png"/>
+                            </div>
+                            <div class="slide_total">
+                                <img src="./img/SanPham/Slide_quang_cao/MayLamSuaHat.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <img alt="ảnh" src="./img/SanPham/Slide_quang_cao/Coixay.png">
+                        <img alt="ảnh" src="./img/SanPham/Slide_quang_cao/NemMassage.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="include_product" id="Home">
+            <div class="row"  id="famous_row1">
+                <div class="col-sm-12">
+                    <h1>Trang chủ</h1>
+                    <i class="fa-solid fa-star" style="padding-top: 1.5rem;"></i>
+                </div>
+                <hr style="height: 10px; background-color: orangered;">
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="container-fluid">
+                        <div class="wapper_title">
+                            <h1 style="padding-left: 2%; padding-top: 2%; padding-bottom: 2%;">Sản phẩm của chúng tôi:</h1>
+                        </div>
+                        <div id="wapper">
+                            <div class="row autoplay">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="product_type">
+                                            <div class="product_type_image">
+                                                <img alt="Nồi Chiên" src="./img/Icon_loai_sp/NoiChien.png">
+                                            </div>
+                                            <div class="product_type_name">
+                                                <h5>Nồi chiên</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="product_type">
+                                            <div class="product_type_image">
+                                                <img alt="Máy ép" src="./img/Icon_loai_sp/MayEp.png">
+                                            </div>
+                                            <div class="product_type_name">
+                                                <h5>Máy ép</h5>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="product_type">
+                                            <div class="product_type_image">
+                                                <img alt="Máy ép" src="./img/Icon_loai_sp/MaiHutBui.png">
+                                            </div>
+                                            <div class="product_type_name">
+                                                <h5>Máy hút bụi</h5>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="product_type">
+                                            <div class="product_type_image">
+                                                <img alt="Nồi lẩu" src="./img/Icon_loai_sp/NoiLau.png">
+                                            </div>
+                                            <div class="product_type_name">
+                                                <h5>Nồi nấu lẩu</h5>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="product_type">
+                                            <div class="product_type_image">
+                                                <img alt="Bồn ngâm chân" src="./img/Icon_loai_sp/BonNgamChan.png">
+                                            </div>
+                                            <div class="product_type_name">
+                                                <h5>Bồn ngâm chân</h5>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="product_type">
+                                            <div class="product_type_image">
+                                                <img alt="Máy làm sữa hạt" src="./img/Icon_loai_sp/MayLamSuaHat.png">
+                                            </div>
+                                            <div class="product_type_name">
+                                                <h5>Máy làm sữa hạt</h5>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="product_type">
+                                            <div class="product_type_image">
+                                                <img alt="Thảm mát xa" src="./img/Icon_loai_sp/ThamNam.png">
+                                            </div>
+                                            <div class="product_type_name">
+                                                <h5>Thảm massage</h5>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="product_type">
+                                            <div class="product_type_image">
+                                                <img alt="Cối xay thịt" src="./img/Icon_loai_sp/CoiXayThit.png">
+                                            </div>
+                                            <div class="product_type_name">
+                                                <h5>Cối xay thịt</h5>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="famous_item">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="menu_area">
+                        <div class="menu_title">
+                            <h5 style="font-weight: bolder; font-size: 100%;">Danh mục sản phẩm:</h5>
+                        </div>
+                        <div class="menu_item">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Nấu món ăn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Pha chế</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Nấu bột mỳ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Thiết bị mát xa</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Thiết bị vệ sinh</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Khác</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="advertisement_near_menu">
+                            <a href="#"><img src="./img/tet_2.gif" alt="Tet 2023"/></a>
+                            <h1>Chúc mừng năm mới 2023!</h1>
+                        </div>
+                        <div class="headline">
+                            <div class="row">
+                                <div class="col-sm-12" id="News">
+                                    <h1 style="font-size: 2rem; margin: 0; margin-right: 2%;">Tin tức</h1>
+                                </div>
+                                <hr/>
+                            </div>
+                            <div class="row news_item">
+                                <div class="col-sm-8">
+                                    <a href="#">Bật mí về 6 công dụng nồi chiên không dầu bạn nên biết</a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <img alt="ảnh" src="./img/Headlines/air_fry_benefit.png">
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row news_item">
+                                <div class="col-sm-8">
+                                    <a href="#">Chế biến hạt rẻ rang cùng nồi chiên ngon bất ngờ!</a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <img alt="ảnh" src="./img/Headlines/HatDe_Va_NoiChien.png">
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row news_item">
+                                <div class="col-sm-8">
+                                    <a href="#">Gà lá giang, bạn đã thử nấu với nồi chiên không dầu?</a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <img alt="ảnh" src="./img/Headlines/Chicken_Air_Fry.png">
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row news_item">
+                                <div class="col-sm-8">
+                                    <a href="#">Top những loại thực phẩm tốt cho chế độ ăn của bạn</a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <img alt="ảnh" src="./img/Headlines/Save_Weight.png">
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row news_item">
+                                <div class="col-sm-8">
+                                    <a href="#">Làm bánh mì hoa cúc bằng máy làm bánh mì</a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <img alt="ảnh" src="./img/Headlines/Lam_Mi_cung_Ranbem.png">
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row news_item">
+                                <div class="col-sm-8">
+                                    <a href="#">Top 10 Món lẩu ngon nhất ngày Tết bạn nên thử</a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <img alt="ảnh" src="./img/Headlines/An_Lau_Ngay_Tet.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---------------------------------------------------------------------------------------------------------->
+                <div class="col-sm-7">
+                    <div class="container">
+                        <div class="wrapper_title">
+                            <h1>Sản phẩm được tìm kiếm nhất</h1>
+                        </div>
+                        <div class="wrapper">
+                            <div class="row filtering">
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="product_total">
+                                            <div class="product_img">
+                                                <img alt="Ảnh" src="./img/SanPham/Khac/MayLamBanhMi.png"/>
+                                            </div>
+                                            <div class="product_title">
+                                                <h5>Máy làm bánh mì RanBem</h5>
+                                                <b>Giá: 2 triệu</b>
+                                            </div>
+                                            <button class="btn btn-danger">Đặt mua</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <img alt="Ảnh" src="./img/SanPham/NoiNauLau/AUX_D01.png"/>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Nồi áp suất AUX - D01</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <button class="btn btn-warning">Đặt mua</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <video controls loop preload="auto">
+                                                        <source src="./img/SanPham/Khac/Mayhutbui_Haier.mp4" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                      </video>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Máy hút bụi Haier tiện lợi</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <button class="btn btn-warning">Đặt mua</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="product_total">
+                                            <div class="product_img">
+                                                <img alt="Ảnh" src="./img/SanPham/MayEp/MayEp_Olivio.png"/>
+                                            </div>
+                                            <div class="product_title">
+                                                <h5>Máy ép trái cây Olivio</h5>
+                                                <b>Giá: 2 triệu</b>
+                                            </div>
+                                            <button class="btn btn-warning">Đặt mua</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <img alt="Ảnh" src="./img/SanPham/NoiChien/NoiChien8L_Hongxin.png"/>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Nồi chiên 8L Hongxin</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <button class="btn btn-warning">Đặt mua</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <video controls loop preload="auto">
+                                                        <source src="./img/SanPham/NoiNauLau/BepTu_Bear.mp4" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                    </video>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Nồi lẩu Bear dung tích 7L</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <button class="btn btn-warning">Đặt mua</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="wrapper_title">
+                            <h1>Nồi chiên</h1>
+                        </div>
+                        <div class="wrapper">
+                            <div class="row filtering">
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="product_total">
+                                            <div class="product_img">
+                                                <img alt="Ảnh" src="./img/SanPham/Khac/MayLamBanhMi.png"/>
+                                            </div>
+                                            <div class="product_title">
+                                                <h5>Máy làm bánh mì RanBem</h5>
+                                                <b>Giá: 2 triệu</b>
+                                            </div>
+                                            <button class="btn btn-warning">Đặt mua</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <img alt="Ảnh" src="./img/SanPham/NoiNauLau/AUX_D01.png"/>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Nồi áp suất AUX - D01</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <button class="btn btn-warning">Đặt mua</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <video controls loop preload="auto">
+                                                        <source src="./img/SanPham/Khac/Mayhutbui_Haier.mp4" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                      </video>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Máy hút bụi Haier tiện lợi</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <button class="btn btn-warning">Đặt mua</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="product_total">
+                                            <div class="product_img">
+                                                <img alt="Ảnh" src="./img/SanPham/MayEp/MayEp_Olivio.png"/>
+                                            </div>
+                                            <div class="product_title">
+                                                <h5>Máy ép trái cây Olivio</h5>
+                                                <b>Giá: 2 triệu</b>
+                                            </div>
+                                            <button class="btn btn-warning">Đặt mua</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <img alt="Ảnh" src="./img/SanPham/NoiChien/NoiChien8L_Hongxin.png"/>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Nồi chiên 8L Hongxin</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <button class="btn btn-warning">Đặt mua</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <video controls loop preload="auto">
+                                                        <source src="./img/SanPham/NoiNauLau/BepTu_Bear.mp4" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                    </video>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Nồi lẩu Bear dung tích 7L</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <button class="btn btn-warning">Đặt mua</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="wrapper_title">
+                            <h1>Máy ép</h1>
+                        </div>
+                        <div class="wrapper">
+                            <div class="row filtering">
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="product_total">
+                                            <div class="product_img">
+                                                <img alt="Ảnh" src="./img/SanPham/Khac/MayLamBanhMi.png"/>
+                                            </div>
+                                            <div class="product_title">
+                                                <h5>Máy làm bánh mì RanBem</h5>
+                                                <b>Giá: 2 triệu</b>
+                                            </div>
+                                            <button class="btn btn-warning">Đặt mua</button>
+                                        </div>
+                                    </div>
+                                    </div>  
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <img alt="Ảnh" src="./img/SanPham/NoiNauLau/AUX_D01.png"/>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Nồi áp suất AUX - D01</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <button class="btn btn-warning">Đặt mua</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <video controls loop preload="auto">
+                                                        <source src="./img/SanPham/Khac/Mayhutbui_Haier.mp4" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                      </video>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Máy hút bụi Haier tiện lợi</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <button class="btn btn-warning">Đặt mua</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="product_total">
+                                            <div class="product_img">
+                                                <img alt="Ảnh" src="./img/SanPham/MayEp/MayEp_Olivio.png"/>
+                                            </div>
+                                            <div class="product_title">
+                                                <h5>Máy ép trái cây Olivio</h5>
+                                                <b>Giá: 2 triệu</b>
+                                            </div>
+                                            <button class="btn btn-warning">Đặt mua</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <img alt="Ảnh" src="./img/SanPham/NoiChien/NoiChien8L_Hongxin.png"/>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Nồi chiên 8L Hongxin</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <button class="btn btn-warning">Đặt mua</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <video controls loop preload="auto">
+                                                        <source src="./img/SanPham/NoiNauLau/BepTu_Bear.mp4" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                    </video>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Nồi lẩu Bear dung tích 7L</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <button class="btn btn-warning">Đặt mua</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---------------------------------------------------------------------------------------------------------->
+                <div class="col-sm-3" id="Advert">
+                    <div class="advert1">
+                        <a href="#"><img alt="ảnh" src="./img/SanPham/NoiNauLau/NoiLau_Rong_Bear.png"/></a>
+                        <button class="btn btn-danger" style="margin-top:5%;">Check ngay hôm nay!</button>
+                    </div>
+                    <div class="advert2">
+                        <h1>Tại sao nên sử dụng nồi chiên không dầu?</h1>
+                        <iframe width="100%" height="40%" src="https://www.youtube.com/embed/cbwU-6w-3g8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <a href="https://www.youtube.com/@onganhthichnauan" target="_blank"><p>Nguồn: Youtuber - Ông anh thích nấu ăn</p></a>
+                        <br/>
+                        <h1>Máy ép trái cây và những điều bạn nên biết</h1>
+                        <iframe width="100%" height="40%" src="https://www.youtube.com/embed/h9C6j062f9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <a href="https://www.youtube.com/channel/UCggNkBGDPfgxUbHBjGQU5sA" target="_blank"><p>Nguồn: Điện máy xanh</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Advertisement1">
+            <div class="row">
+                <div class="col-sm-6">
+                    <a href="#"><img alt="QC1" src="./img/tet.png"></a>
+                </div>
+                <div class="col-sm-6">
+                    <a href="#"><img alt="QC1" src="./img/QuangCao2.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="famous_item2">
+            <div class="row">
+                <div class="col-sm-8 slide_product2">
+                    <div class="container">
+                        <div class="wrapper_title">
+                            <h1>Máy làm bánh mì</h1>
+                        </div>
+                        <div class="wrapper">
+                            <div class="row filtering">
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="product_total">
+                                            <div class="product_img">
+                                                <img alt="Ảnh" src="./img/SanPham/Khac/MayLamBanhMi.png"/>
+                                            </div>
+                                            <div class="product_title">
+                                                <h5>Máy làm bánh mì RanBem</h5>
+                                                <b>Giá: 2 triệu</b>
+                                            </div>
+                                            <div class="buy">
+                                                <button class="btn btn-danger">Đặt mua</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <img alt="Ảnh" src="./img/SanPham/NoiNauLau/AUX_D01.png"/>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Nồi áp suất AUX - D01</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <div class="buy">
+                                                    <button class="btn btn-danger">Đặt mua</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <video controls loop preload="auto">
+                                                        <source src="./img/SanPham/Khac/Mayhutbui_Haier.mp4" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                      </video>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Máy hút bụi Haier tiện lợi</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <div class="buy">
+                                                    <button class="btn btn-danger">Đặt mua</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="product_total">
+                                            <div class="product_img">
+                                                <img alt="Ảnh" src="./img/SanPham/MayEp/MayEp_Olivio.png"/>
+                                            </div>
+                                            <div class="product_title">
+                                                <h5>Máy ép trái cây Olivio</h5>
+                                                <b>Giá: 2 triệu</b>
+                                            </div>
+                                            <div class="buy">
+                                                <button class="btn btn-danger">Đặt mua</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <img alt="Ảnh" src="./img/SanPham/NoiChien/NoiChien8L_Hongxin.png"/>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Nồi chiên 8L Hongxin</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <div class="buy">
+                                                    <button class="btn btn-danger">Đặt mua</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <video controls loop preload="auto">
+                                                        <source src="./img/SanPham/NoiNauLau/BepTu_Bear.mp4" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                    </video>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Nồi lẩu Bear dung tích 7L</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                            <div class="buy">
+                                                <button class="btn btn-danger">Đặt mua</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="wrapper_title">
+                            <h1>Máy làm sữa hạt</h1>
+                        </div>
+                        <div class="wrapper">
+                            <div class="row filtering">
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="product_total">
+                                            <div class="product_img">
+                                                <img alt="Ảnh" src="./img/SanPham/Khac/MayLamBanhMi.png"/>
+                                            </div>
+                                            <div class="product_title">
+                                                <h5>Máy làm bánh mì RanBem</h5>
+                                                <b>Giá: 2 triệu</b>
+                                            </div>
+                                            <div class="buy">
+                                                <button class="btn btn-danger">Đặt mua</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <img alt="Ảnh" src="./img/SanPham/NoiNauLau/AUX_D01.png"/>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Nồi áp suất AUX - D01</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <div class="buy">
+                                                    <button class="btn btn-danger">Đặt mua</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <video controls loop preload="auto">
+                                                        <source src="./img/SanPham/Khac/Mayhutbui_Haier.mp4" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                      </video>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Máy hút bụi Haier tiện lợi</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <div class="buy">
+                                                    <button class="btn btn-danger">Đặt mua</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="product_total">
+                                            <div class="product_img">
+                                                <img alt="Ảnh" src="./img/SanPham/MayEp/MayEp_Olivio.png"/>
+                                            </div>
+                                            <div class="product_title">
+                                                <h5>Máy ép trái cây Olivio</h5>
+                                                <b>Giá: 2 triệu</b>
+                                            </div>
+                                            <div class="buy">
+                                                <button class="btn btn-danger">Đặt mua</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <img alt="Ảnh" src="./img/SanPham/NoiChien/NoiChien8L_Hongxin.png"/>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Nồi chiên 8L Hongxin</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <div class="buy">
+                                                    <button class="btn btn-danger">Đặt mua</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <video controls loop preload="auto">
+                                                        <source src="./img/SanPham/NoiNauLau/BepTu_Bear.mp4" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                    </video>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Nồi lẩu Bear dung tích 7L</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                            <div class="buy">
+                                                <button class="btn btn-danger">Đặt mua</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="wrapper_title">
+                            <h1>Thiết bị massage</h1>
+                        </div>
+                        <div class="wrapper">
+                            <div class="row filtering">
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="product_total">
+                                            <div class="product_img">
+                                                <img alt="Ảnh" src="./img/SanPham/Khac/MayLamBanhMi.png"/>
+                                            </div>
+                                            <div class="product_title">
+                                                <h5>Máy làm bánh mì RanBem</h5>
+                                                <b>Giá: 2 triệu</b>
+                                            </div>
+                                            <div class="buy">
+                                                <button class="btn btn-danger">Đặt mua</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <img alt="Ảnh" src="./img/SanPham/NoiNauLau/AUX_D01.png"/>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Nồi áp suất AUX - D01</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <div class="buy">
+                                                    <button class="btn btn-danger">Đặt mua</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <video controls loop preload="auto">
+                                                        <source src="./img/SanPham/Khac/Mayhutbui_Haier.mp4" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                      </video>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Máy hút bụi Haier tiện lợi</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <div class="buy">
+                                                    <button class="btn btn-danger">Đặt mua</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="product_total">
+                                            <div class="product_img">
+                                                <img alt="Ảnh" src="./img/SanPham/MayEp/MayEp_Olivio.png"/>
+                                            </div>
+                                            <div class="product_title">
+                                                <h5>Máy ép trái cây Olivio</h5>
+                                                <b>Giá: 2 triệu</b>
+                                            </div>
+                                            <div class="buy">
+                                                <button class="btn btn-danger">Đặt mua</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <img alt="Ảnh" src="./img/SanPham/NoiChien/NoiChien8L_Hongxin.png"/>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Nồi chiên 8L Hongxin</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <div class="buy">
+                                                    <button class="btn btn-danger">Đặt mua</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <video controls loop preload="auto">
+                                                        <source src="./img/SanPham/NoiNauLau/BepTu_Bear.mp4" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                    </video>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Nồi lẩu Bear dung tích 7L</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                            <div class="buy">
+                                                <button class="btn btn-danger">Đặt mua</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="wrapper_title">
+                            <h1>Vệ sinh phòng, nhà bếp</h1>
+                        </div>
+                        <div class="wrapper">
+                            <div class="row filtering">
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="product_total">
+                                            <div class="product_img">
+                                                <img alt="Ảnh" src="./img/SanPham/Khac/MayLamBanhMi.png"/>
+                                            </div>
+                                            <div class="product_title">
+                                                <h5>Máy làm bánh mì RanBem</h5>
+                                                <b>Giá: 2 triệu</b>
+                                            </div>
+                                            <div class="buy">
+                                                <button class="btn btn-danger">Đặt mua</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <img alt="Ảnh" src="./img/SanPham/NoiNauLau/AUX_D01.png"/>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Nồi áp suất AUX - D01</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <div class="buy">
+                                                    <button class="btn btn-danger">Đặt mua</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <video controls loop preload="auto">
+                                                        <source src="./img/SanPham/Khac/Mayhutbui_Haier.mp4" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                      </video>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Máy hút bụi Haier tiện lợi</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <div class="buy">
+                                                    <button class="btn btn-danger">Đặt mua</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="product_total">
+                                            <div class="product_img">
+                                                <img alt="Ảnh" src="./img/SanPham/MayEp/MayEp_Olivio.png"/>
+                                            </div>
+                                            <div class="product_title">
+                                                <h5>Máy ép trái cây Olivio</h5>
+                                                <b>Giá: 2 triệu</b>
+                                            </div>
+                                            <div class="buy">
+                                                <button class="btn btn-danger">Đặt mua</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <img alt="Ảnh" src="./img/SanPham/NoiChien/NoiChien8L_Hongxin.png"/>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Nồi chiên 8L Hongxin</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                                <div class="buy">
+                                                    <button class="btn btn-danger">Đặt mua</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                                <a href="#">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="product_total">
+                                                <div class="product_img">
+                                                    <video controls loop preload="auto">
+                                                        <source src="./img/SanPham/NoiNauLau/BepTu_Bear.mp4" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                    </video>
+                                                </div>
+                                                <div class="product_title">
+                                                    <h5>Nồi lẩu Bear dung tích 7L</h5>
+                                                    <b>Giá: 2 triệu</b>
+                                                </div>
+                                            <div class="buy">
+                                                <button class="btn btn-danger">Đặt mua</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!---------------------------------------------------------------------------------------------------------->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 Advertisement2">
+                    <a href="#"><img alt="ảnh" src="./img/SanPham/Slide_quang_cao/MayLamMi.png"/></a>
+                    <a href="#"><img alt="ảnh" src="./img/SanPham/Slide_quang_cao/MayLamSuaHat2.png"/></a>
+                    <a href="#"><img alt="ảnh" src="./img/SanPham/Slide_quang_cao/BonNgamChan.png"/></a>
+                </div>
+            </div>
+        </div>
+        <div class="delivery">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Hình thức giao hàng</h1>
+                        <br/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 18rem; background-color: red;">
+                            <div class="card-body">
+                              <h5 class="card-title">Chuyển phát nhanh</h5>
+                              <br/>
+                              <i class="fa-solid fa-xl fa-truck-fast"></i>
+                              <br/>
+                              <hr/>
+                              <p class="card-text">Chúng tôi áp dụng khi bạn ở xa khu vực của shop và có mong muốn được sở hữu sản phẩm trong thời gian chờ đợi ngắn nhất có thể</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 18rem; background: green;">
+                            <div class="card-body">
+                              <h5 class="card-title">Giao hàng nội thành</h5>
+                              <br/>
+                              <i class="fa-solid fa-xl fa-motorcycle"></i>
+                              <hr/>
+                              <p class="card-text">Wow! Khoảng cách giữa chúng ta thật gần. Chúng tôi rất hạnh phúc với điều đó, bạn chỉ cần "alo" và chúng tôi sẽ ngay lập tức giao hàng đến tận tay cho bạn.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 18rem; background-color: violet;">
+                            <div class="card-body">
+                              <h5 class="card-title">Chuyển phát thường</h5>
+                              <br/>
+                              <i class="fa-solid fa-xl fa-truck"></i>
+                              <hr/>
+                              <p class="card-text">Nếu như bạn không vội, bạn hoàn toàn có thể lựa chọn nó. Ý tôi là ... chúng ta không thực sự nên quá vội vàng với cuộc sống này</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card border-primary" style="width: 18rem; background-color: cadetblue;">
+                            <div class="card-body">
+                              <h5 class="card-title">Tư vấn trực tiếp</h5>
+                              <br/>
+                              <i class="fa-solid fa-xl fa-face-smile-wink"></i>
+                              <hr/>
+                              <p class="card-text">Bạn sẽ có thể trực tiếp đi xem và chọn mặt hàng mà mình mong muốn ngay tại shop chúng tôi. Ở đó, chúng tôi luôn sẵn sàng hỗ trợ và phục vụ cho bạn cho nhu cầu tư vấn sản phẩm</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="address">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4 HUD border border-secondary">
+                        <a href="#"><img alt="ảnh" src="./img/DiaChi_link.png"/></a>
+                    </div>
+                    <div class="col-sm-6 Rule_of_shop border border-secondary">
+                        <h1><b>Bếp nhà Ốc:</b></h1>
+                        <hr/>
+                        <p> - <b>Thanh toán:</b> nhanh gọn, an toàn:<img alt="pay" src="./img/Pay.png" style="width:30%;"/></p>
+                        <p> - <b>Bảo hành 1 năm, cam kết đổi trả nếu sản phẩm có vấn đề.</b></p>
+                        <p> - <b>Miễn phí</b> ship cho các đơn hàng nội thành hoặc đơn hàng có giá trị từ 1.500.000 VNĐ trở lên.</p>
+                        <p> - <b>Showroom:</b> Chung cư xã hội XH - 01 Phước Long, phường Phước Long, Tp.Nha Trang, tỉnh Khánh hòa, CT2A - tầng 706</p>
+                        <p> - <b>Chi tiết liên hệ:</b> 0383 519 389 (Ms.Ngân) để được tư vấn.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <hr/>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="footer1">
+                        <img alt="Bếp Nhà Ốc" src="./img/Avatar.png">
+                        <p>Hãy trở thành hội viên để nhận được các thông báo mới nhất về chúng tôi. Cảm ơn bạn đã ghé thăm <i class="fa fa-dangerous fa-heart"></i></p>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Email..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                              <button class="btn sent_email_button" type="button"><i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="footer2">
+                        <h1>Sản phẩm:</h1>
+                        <ul type="none">
+                            <li><a href="#">Thiết bị chế biến thực phẩm</a></li>
+                            <li><a href="#">Sản phẩm dọn dẹp đa năng</a></li>
+                            <li><a href="#">Dụng cụ đa năng</a></li>
+                            <li><a href="#">Các đồ dùng kèm theo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="footer3">
+                        <h1>Dịch vụ:</h1>
+                        <ul type="none">
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Hướng dẫn sử dụng</a></li>
+                            <li><a href="#">Khách hàng thân thiết</a></li>
+                            <li><a href="#">Các mặt hàng mới</a></li>
+                            <li><a href="#">Nhà quản lý</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="footer4">
+                        <h1>Liên hệ: </h1>
+                        <p>Liên hệ với chúng tôi qua các nền tảng mạng xã hội:</p>
+                            <a href="#"><i class="fa-brands fa-xl fa-facebook" style="color:rgb(13, 10, 221);"></i></a>
+                            <a href="#"><i class="fa-brands fa-xl fa-youtube" style="color: red;"></i></a>
+                            <a href="#"><i class="fa-brands fa-xl fa-google" style="color:rgb(11, 173, 33);"></i></a>
+                            <a href="#"><i class="fa-solid fa-xl fa-location-dot" style="color:orange;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <div class="container">
+                <p>Với việc vào bếp ngày càng đi theo thời đại, chị Hoàng Thái Ngân đã cùng chung ý tưởng với chùng tôi để tạo nên trang web trên với nhiệm vụ cung cấp sỉ lẻ sửa chữa hàng gia dụng thông minh. Bảo hành 1 năm. Ba kích tím, sâm cau, mú từn... Bao test. Chúng tôi luôn mong muốn mang lại dịch vụ tiện ích nhất cho khách hàng với chi phí rẻ nhất, tốt nhất. Cảm ơn quý khách hàng đã đồng hành cùng chúng tôi trong thời gian qua.</p>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="end-footer">
+                        <h1>Website thuộc bản quyền công ty một thành viên</h1>
+                        <p>Developer: Nesta Pivard &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone 0989 910 309</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script rel="stylesheet" href="./Bootstrap/js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+        $('.filtering').slick({
+  slidesToShow: 5,
+  slidesToScroll: 4
+    });
+var filtered = false;
+    $('.js-filter').on('click', function(){
+        if (filtered === false) {
+            $('.filtering').slick('slickFilter',':even');
+            $(this).text('Unfilter Slides');
+            filtered = true;
+        } else {
+            $('.filtering').slick('slickUnfilter');
+            $(this).text('Filter Slides');
+            filtered = false;
+        }
+    });			
+    </script>
+    <script type="text/javascript">     
+        $('.autoplay').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.slide').slick({
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                prevArrow:"<button type='button' class='slick-prev slick-arrow'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+                nextArrow:"<button type='button' class='slick-next slick-arrow'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+            });
+        });
+    </script>
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+</body>
+</html>
